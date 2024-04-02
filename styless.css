@@ -26,7 +26,7 @@ h1 {
   line-height: 1.2;
 }
 .name-label {
-  display: inline-block;
+  display: flex;
 }
 
 p {
@@ -75,9 +75,6 @@ button {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.text-center {
-  text-align: center;
-}
 form {
   background: var(--color-gray-alpha);
   padding: 2.5rem 0.625rem;
