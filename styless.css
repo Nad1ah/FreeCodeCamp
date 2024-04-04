@@ -1,156 +1,129 @@
-:root {
-  --color-gray: #a1a1a1;
-  --color-darkblue: #2f2f61;
-  --color-gray-alpha: rgba(170, 170, 196, 0.8);
-  --color-green: #d3e9db;
-}
-
-*,
-*::before,
-*::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--color-white);
-  margin: 0;
-}
-h1 {
-  text-transform: unset;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.name-label {
   display: flex;
-}
-
-p {
-  font-size: 1.125rem;
-}
-
-h1,
-p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-label {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 1.125rem;
-  margin-bottom: 0.5rem;
-}
-
-input,
-button,
-select,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-button {
-  border: none;
-}
-
-.container {
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
-}
-.header {
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
-}
-
-.description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+  background-color: #f2f2f2;
 }
 
 form {
-  background: var(--color-gray-alpha);
-  padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem;
-}
-
-@media (min-width: 480px) {
-  form {
-    padding: 2.5rem;
-  }
-}
-.input-radio,
-.input-checkbox {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-}
-
-.input-textarea {
-  min-height: 120px;
   width: 100%;
-  padding: 0.625rem;
-  resize: vertical;
-}
-
-.submit-button {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background: var(--color-green);
-  color: inherit;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-/* form {
-  display: inline-flexbox;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
-  max-width: 500px;
-  color: black;
-}
-fieldset {
-  color: gray;
-}
-input[type="text"] {
-  width: 80%;
-  padding: 5px 20px;
-  margin: 5px 0;
-  box-sizing: border-box;
-}
-input[type="email"] {
-  width: 80%;
-  padding: 5px 20px;
-  margin: 5px 0;
-  box-sizing: border-box;
-}
-input[type="number"] {
-  width: 80%;
-  padding: 5px 20px;
-  margin: 5px 0;
-  box-sizing: border-box;
-}
-h1,
-p {
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+#title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
 label {
-  text-align: left;
-  color: black;
+  color: #555;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
 }
+
 input {
-  text-align: right;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 18px;
 }
-label[for="option"] {
-  display: inline;
-} */
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+  width: auto;
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+}
+
+select {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.survey-form {
+  color: #555;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+fieldset {
+  color: #555;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  display: flex;
+}
